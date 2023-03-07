@@ -18,6 +18,7 @@ vcell = "~0.1"
 [features]
 default = [ "rt",]
 rt = [ "cortex-m-rt/device",]
+critical-section = [ "dep:critical-section", "portable-atomic/critical-section",]
 efm32tg11b120 = []
 efm32tg11b140 = []
 efm32tg11b320 = []
